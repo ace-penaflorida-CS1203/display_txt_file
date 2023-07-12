@@ -4,16 +4,7 @@
 using namespace std;
 
 
-
-/*
-view to-do
-    - back
-    - finish item
-add to-do
-delete to-do
-*/
-
-int categorizeList() { // not final
+int categorizeList() { // not final, are yung ginagawa ko kanina
   int chooseCateg;
   bool loop_initialzer = true;
   string arrayCategories[30]; //initial size
@@ -73,31 +64,6 @@ void searchFileForString(const string& filename, const string& searchString) {
 }
 
 
-/* string viewToDo(string filename){
-  fstream tasksFile(filename);
-  int viewTasks;
-  cout << "\n    View To Do: \n";
-  cout << "\n      1: All Tasks\n      1: Unfinished Tasks\n";
-  cout << "\n      Enter Here: ";
-  cin >> viewTasks;
-
-  if (viewTasks == 1){
-    cout << "\n\tALL TASKS\n";
-    tasksFile.open(filename, ios::in); 
-    if (tasksFile.is_open()){
-      string line;
-      while(getline(tasksFile, line)){
-        cout << line << endl;
-    }
-  }
-}
-
-if (viewTasks == 2){
-  NULL;
-}
-}
- */
-
 string viewToDo2(string filename){
   fstream tasksFile(filename);
   int viewTasks;
@@ -117,54 +83,6 @@ if (viewTasks == 2){
 }
 }
 
-/* 
-void searchFileForString(const string& filename, const string& searchString) {
-  ifstream file(filename);
-  if (file.is_open()) {
-    string line;
-    bool found = false;
-    bool stopDisplaying = false;
-    
-    while (getline(file, line)) {
-      if (found && !stopDisplaying) {
-        cout << line << endl;
-      } else if (line.find(searchString) != string::npos) {
-        found = true;
-      } else if (line.find("STOP") != string::npos) {
-        stopDisplaying = true;
-      }
-    }
-    
-    file.close();
-    
-    if (!found) {
-      cout << "String not found in the file." << endl;
-    }
-  } else {
-      cout << "Unable to open file: " << filename << endl;
-  }
-}
-
-
-string viewToDo2(string filename){
-  fstream tasksFile(filename);
-  int viewTasks;
-  cout << "\n    View To Do: \n";
-  cout << "\n      1: All Tasks\n      2: Unfinished Tasks\n"; // change this
-  cout << "\n      Enter Here: ";
-  cin >> viewTasks;
-
-  if (viewTasks == 1){
-    cout << "\n\tALL TASKS\n";
-    searchFileForString(filename, "ALL TASKS");
-}
-
-if (viewTasks == 2){
-  cout << "\nUNFINISHED TASKS\n";
-  searchFileForString(filename, "UNFINISHED TASKS");
-}
-}
- */
 
 int main(){
   system("cls");
