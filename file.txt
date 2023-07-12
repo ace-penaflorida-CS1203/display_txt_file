@@ -1,6 +1,6 @@
             ALL TASKS
 Task | Content              | Status      | 
-1.   | Drink Ur Water Bitch | DONE        |
+1.   | Drink Ur Water Hey   | DONE        |
 2.   | Eat Breaky           | In-Progress |
 
 STOP
